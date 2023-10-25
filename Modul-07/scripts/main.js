@@ -10,18 +10,18 @@ const dataset = [
   [475, 44],
 ];
 
-//Udskriver: ?
+//Udskriver: [5,20]
 console.log(dataset[0]);
-//Udskriver: ?
+//Udskriver: [5]
 console.log(dataset[0][0]);
-//Udskriver: ?
+//Udskriver: [480]
 console.log(dataset[1][0]);
-//Udskriver: ?
+//Udskriver: [33]
 console.log(dataset[3][1]);
-//Udskriver: ?
+//Udskriver: [95]
 console.log(dataset[4][1]);
 
-/*
+
 //Manuel mapping
 function mapping(inputValue) {
   return (inputValue / 1000) * 300;
@@ -39,7 +39,6 @@ const scale = d3.scaleLinear()
 console.log("Scale mapping of 1000: " + scale(1000));
 console.log("Scale mapping of 500: " + scale(500));
 console.log("Scale mapping of 50: " + scale(50));
-*/
 
 //Kode der som sådan ikke kører som en samlet enhed, men fragmenter er brugt i undervisningen:
 

@@ -57,6 +57,11 @@ svg
   // Radius er ny sat til at være kvadratroden af y-værdien
   .attr("r", function (d) {
     return Math.sqrt(d[1]);
+  })
+  .attr("fill", function (d) {
+    // Beregn nuancen af farven grøn baseret på d[1]
+    var Nuance = (d[1] / dataset.length) * 30;
+    return "rgb( 0," + Nuance + ", 0)"
   });
 
 //Labels
@@ -76,4 +81,4 @@ svg
   })
   .attr("font-family", "sans-serif")
   .attr("font-size", "11px")
-  .attr("fill", "red");
+  .attr("fill", "grey");
